@@ -38,18 +38,18 @@ if exists('g:loaded_visSum') && g:loaded_visSum == s:this_version
 endif
 let g:loaded_visSum = s:this_version
 
-"Mappings {{{
-" clean up existing key mappings upon re-loading of script
-if hasmapto('<Plug>SumNum')
-	nunmap \su
-	vunmap \su
-	nunmap <Plug>SumNum
-	vunmap <Plug>SumNum
-endif
-
-" Key mappings
-nmap <silent> <unique> <Leader>su <Plug>SumNum
-vmap <silent> <unique> <Leader>su <Plug>SumNum
+""Mappings {{{
+"" clean up existing key mappings upon re-loading of script
+"if hasmapto('<Plug>SumNum')
+"	nunmap \su
+"	vunmap \su
+"	nunmap <Plug>SumNum
+"	vunmap <Plug>SumNum
+"endif
+"
+"" Key mappings
+"nmap <silent> <unique> <Leader>su <Plug>SumNum
+"vmap <silent> <unique> <Leader>su <Plug>SumNum
 
 if has('float')
 	" Call the floating-point version of the function
